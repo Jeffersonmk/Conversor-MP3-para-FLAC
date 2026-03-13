@@ -5,7 +5,12 @@ INPUT_DIR="${1:-}"
 OUTPUT_DIR="${2:-}"
 
 if [[ -z "$INPUT_DIR" || -z "$OUTPUT_DIR" ]]; then
-    echo "Uso: $0 pasta_origem pasta_destino"
+    echo "Uso: $0 <pasta_origem> <pasta_destino>"
+    echo
+    echo "Converte arquivos de áudio (FLAC, WAV, AIFF, M4A) para MP3."
+    echo
+    echo "Exemplo:"
+    echo "  $0 ~/Music/FLAC ~/Music/MP3"
     exit 1
 fi
 
